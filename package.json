@@ -1,0 +1,10 @@
+{
+  "name": "sticky",
+  "version": "1.0.0",
+  "description": "Make you components very sticky!",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "Dušan Stojanović",
+  "license": "ISC"
+}
