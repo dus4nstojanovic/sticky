@@ -3,8 +3,19 @@
   "version": "1.0.0",
   "description": "Make you components very sticky!",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "esbuild src/app.tsx --bundle --minify --sourcemap --outfile=dist/app.js",
+    "start": "npm run build -- --watch --servedir=."
+  },
   "keywords": [],
   "author": "Dušan Stojanović",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^18.2.18",
+    "@types/react-dom": "^18.2.7",
+    "esbuild": "^0.18.17",
+    "lite-server": "^2.6.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 }

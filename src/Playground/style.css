@@ -1,0 +1,48 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.playground {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overflow-container {
+  width: 50vw;
+  height: 50vh;
+  border: thick solid black;
+  overflow: auto;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2px;
+  position: relative;
+}
+
+.column {
+  background: blue;
+  display: flex;
+  flex-flow: column;
+  gap: 2px;
+}
+
+.column .cell {
+  height: 150px;
+  width: 100px;
+  background-color: violet;
+}
+
+.column .cell:first-of-type {
+  background-color: red;
+  border-bottom: thick solid grey;
+}
+
+.column:first-of-type .cell {
+  background: green;
+  border-right: thick solid grey;
+  display: inline-block;
+}
